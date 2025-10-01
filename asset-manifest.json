@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/google-pitch-site/static/css/main.c21f07ad.css",
-    "main.js": "/google-pitch-site/static/js/main.619514b8.js",
+    "main.js": "/google-pitch-site/static/js/main.d724e6f7.js",
     "static/js/453.e79feaf6.chunk.js": "/google-pitch-site/static/js/453.e79feaf6.chunk.js",
     "index.html": "/google-pitch-site/index.html",
     "main.c21f07ad.css.map": "/google-pitch-site/static/css/main.c21f07ad.css.map",
-    "main.619514b8.js.map": "/google-pitch-site/static/js/main.619514b8.js.map",
+    "main.d724e6f7.js.map": "/google-pitch-site/static/js/main.d724e6f7.js.map",
     "453.e79feaf6.chunk.js.map": "/google-pitch-site/static/js/453.e79feaf6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c21f07ad.css",
-    "static/js/main.619514b8.js"
+    "static/js/main.d724e6f7.js"
   ]
 }
