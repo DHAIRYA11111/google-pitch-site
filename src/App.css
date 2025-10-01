@@ -1,0 +1,288 @@
+/* Base Styling */
+.App {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section Styling */
+.section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Background Colors */
+.intro {
+  background-color: #6a67ce;
+  color: #fff;
+  position: relative;
+}
+
+.why-me {
+  background-color: #ff6f91;
+  color: #fff;
+  min-height: 60vh;
+}
+
+.contact {
+  background-color: #00c9a7;
+  color: #000;
+  min-height: 50vh;
+}
+
+/* Text Highlighting */
+.highlight-name {
+  font-size: 170%;
+  font-weight: bold;
+  color: #fff;
+}
+
+.highlight-role {
+  font-size: 170%;
+  font-weight: bold;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+}
+
+.google-logo {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+  transform: translateY(-1px);
+}
+
+.ambassador-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-size: 1.4rem;
+}
+
+/* Confetti Button */
+.confetti-button-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.confetti-button {
+  background-color: #fff;
+  color: #6a67ce;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px dashed #6a67ce;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.confetti-button:hover {
+  background-color: #6a67ce;
+  color: #fff;
+}
+
+.arrow-text {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+}
+
+/* Good Things Section (Strips) */
+.good-things {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.strip {
+  width: 100vw;
+  min-height: 18vh;
+  padding: 20px 40px;
+  font-size: 2.3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  color: #fff;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.align-left {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.align-right {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.strip-1 {
+  background-color: #ff8c42;
+}
+
+.strip-2 {
+  background-color: #f72585;
+}
+
+.strip-3 {
+  background-color: #7209b7;
+}
+
+.strip-4 {
+  background-color: #4cc9f0;
+  color: #000;
+}
+
+/* Final Statement */
+.closing-line {
+  background-color: #1e1e1e;
+  color: #fff;
+  min-height: 60vh;
+  padding: 60px 20px;
+  text-align: left;
+}
+
+.closing-content {
+  max-width: 1000px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.closing-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.closing-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+/* Contact Section Font Sizing */
+.contact h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Why Me Font Adjustments */
+.why-me h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.why-me p {
+  font-size: 1.5rem;
+  max-width: 900px;
+}
+
+/* Intro Video Wrapper */
+.intro-video-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-video {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+/* Video overlay - black box with "Play Video" text */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.video-overlay:hover {
+  background-color: #111;
+}
+
+.video-overlay-text {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Play/Pause button below video */
+.video-toggle-button {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #6a67ce;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.video-toggle-button:hover {
+  background-color: #fff;
+  color: #6a67ce;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .arrow-text {
+    font-size: 0.8rem;
+  }
+
+  .confetti-button {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
+  .closing-title {
+    font-size: 1.7rem;
+  }
+
+  .closing-text {
+    font-size: 1.1rem;
+  }
+}
